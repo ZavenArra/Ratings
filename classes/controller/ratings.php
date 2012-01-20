@@ -25,7 +25,7 @@ abstract class Controller_Ratings extends Controller {
       
    }
    
-   public function storeRating($object_id, $userRating) {
+   public function action_storeRating($object_id, $userRating) {
       
       $objectTypeId = self::getObjectTypeId();
       $user_id = Session::instance()->get('auth_user')->id;
